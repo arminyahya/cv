@@ -28,7 +28,7 @@ export const AvatarImgWrap = styled.div`
 	border-top-right-radius: 140px;
 	background: #9e978e;
 	display: inline-block;
-	background: url('images/resume-avatar.jfif');
+	background: url('/cv/images/resume-avatar.jfif');
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: cover;
@@ -359,7 +359,7 @@ export const LaptopSliderInner = styled.div`
 		position: relative;
 		width: 50%;
 		float: right;
-		background: url('images/mockup-macbook-pro-2017-bw.png');
+		background: url('/cv/images/mockup-macbook-pro-2017-bw.png');
 		background-repeat: no-repeat;
 		background-position: top left;
 		background-size: contain;
@@ -373,7 +373,7 @@ export const MobileLaptopSliderInner = styled.div`
 		width: 325px;
 		margin: 0px auto;
 		float: right;
-		background: url('images/mockup-macbook-pro-2017-bw.png');
+		background: url('/cv/images/mockup-macbook-pro-2017-bw.png');
 		background-repeat: no-repeat;
 		background-position: top left;
 		background-size: contain;

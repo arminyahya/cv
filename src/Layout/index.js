@@ -7,7 +7,6 @@ import { matchPath } from 'react-router';
 
 class Layout extends React.Component {
 	render() {
-		console.log(this.props);
 		return (
 			<>
 				<AvatarWrap>

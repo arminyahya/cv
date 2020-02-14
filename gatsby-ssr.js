@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from "react";
+import { HashRouter } from 'react-router-dom';
+import { Body } from './src/Styled';
+import Layout from './src/Layout';
 
-// You can delete this file if you're not using it
+export const wrapPageElement = ({ element, props }) => {
+    return (
+            <Body {...props}>
+                <Layout  {...props} currentScreen={props["*"]}>{element}</Layout>
+            </Body>
+    )
+}
