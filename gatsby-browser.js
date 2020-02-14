@@ -6,10 +6,8 @@ require("typeface-rubik");
 
 export const wrapPageElement = ({ element, props }) => {
     return (
-        <HashRouter>
             <Body>
                 <Layout {...props} currentScreen={props["*"]}>{element}</Layout>
             </Body>
-        </HashRouter>
     )
 }

@@ -28,7 +28,7 @@ export const AvatarImgWrap = styled.div`
 	border-top-right-radius: 140px;
 	background: #9e978e;
 	display: inline-block;
-	background: url('/images/resume-avatar.jfif');
+	background: url('images/resume-avatar.jfif');
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: cover;
@@ -103,15 +103,21 @@ export const RouteContent = styled.div`
 `;
 
 export const ExperienceInner = styled.div`
+	display: none;
+	flex-direction: row;
+	min-height: 800px;
+	@media only screen and (min-width:991px) {
 		display: flex;
-		flex-direction: row;
-		min-height: 800px;
+	}
 
 `;
 
 export const MobileExperienceInner = styled.div`
-		display: flex;
+		display: none;
 		flex-direction: column;
+		@media only screen and (max-width:991px) {
+			display: flex;
+		}
 
 `;
 
@@ -558,9 +564,9 @@ export const BiographySkill = styled.div`
 	marginTop: 30px;
 	min-width: 25%;
 	margin: 10px;
-	 display: flex;
-		flex-direction: column;
-		 align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	.CircularProgressbar .CircularProgressbar-path {
 		stroke: #E94541;
 	}

@@ -63,8 +63,8 @@ export default class Biography extends React.Component {
                 <Skill name="Git" percent={100} icon={GitIcon} />
                 <Skill name="Gatsby" percent={80} icon={GatsbyIcon} />
                 <Skill name="Node" percent={80} icon={NodeIcon} />
-                <BiographySkill><div style={{ width: '25%'}} /></BiographySkill>
-                <BiographySkill><div style={{ width: '25%'}} /></BiographySkill>
+                <BiographySkill><div style={{ width: '25%' }} /></BiographySkill>
+                <BiographySkill><div style={{ width: '25%' }} /></BiographySkill>
             </BiographySkillsWrap>
         </BiographyInner>
     }
@@ -91,11 +91,12 @@ export function Skill({ name, percent, icon: Icon }) {
                     duration={2}
                     easingFunction={easeLinear}
                     repeat={false}
-                >{value =>
-                        <CircularProgressbarWithChildren className="skill-percent" value={value} strokeWidth={2} duration={10}>
-                            <Icon />
-                        </CircularProgressbarWithChildren>
-                    }</AnimatedProgressProvider>
+                >
+                    {(value) => (<CircularProgressbarWithChildren className="skill-percent" value={value} strokeWidth={2} duration={10}>
+                        <Icon />
+                    </CircularProgressbarWithChildren>)
+                    }
+                </AnimatedProgressProvider>
             </div>
             <span style={{ color: '#fff', marginTop: 10 }}>{name}</span>
             <span style={{ color: '#E94541', margin: 0 }}>{percent}%</span>
