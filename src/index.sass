@@ -1,0 +1,56 @@
+@font-face
+  font-family: young
+  src: url('/cv/Young.ttf')
+
+html
+  height: 100%
+  scroll-behavior: smooth
+
+body
+  height: 100%
+  margin: 0
+  font-family: young, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  letter-spacing: 1.25px
+
+#___gatsby
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  flex: 1
+  background: -moz-linear-gradient((-0.4%) -4.93% -47.96deg, rgba(45, 20, 44, 1) 0%, rgba(128, 19, 54, 1) 50%, rgba(233, 69, 65, 1) 100%)
+  background: -webkit-linear-gradient(-47.96deg, rgba(45, 20, 44, 1) 0%, rgba(128, 19, 54, 1) 50%, rgba(233, 69, 65, 1) 100%)
+  background: -webkit-gradient(linear, (-0.4%) -4.93%, 110.23% 115.65%, color-stop(0, rgba(45, 20, 44, 1)), color-stop(0.5, rgba(128, 19, 54, 1)), color-stop(1, rgba(233, 69, 65, 1)))
+  background: -o-linear-gradient(-47.96deg, rgba(45, 20, 44, 1) 0%, rgba(128, 19, 54, 1) 50%, rgba(233, 69, 65, 1) 100%)
+  background: -ms-linear-gradient(-47.96deg, rgba(45, 20, 44, 1) 0%, rgba(128, 19, 54, 1) 50%, rgba(233, 69, 65, 1) 100%)
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#2D142C', endColorstr='#E94541' ,GradientType=0)"
+  background: linear-gradient(137.96deg, rgba(45, 20, 44, 1) 0%, rgba(128, 19, 54, 1) 50%, rgba(233, 69, 65, 1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2D142C',endColorstr='#E94541' , GradientType=1)
+
+.skill-percent
+  /* height: 200px;
+   *width: 100px;*/
+  position: relative
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open
+  z-index: 1000
+  background-color: rgba(0, 0, 0, 0.5) !important
+
+/* .ReactModal__Content.ReactModal__Content--after-open {
+ *	margin: 0px 10px;
+ *}
+
+.swiper-pagination-bullet
+  cursor: pointer
+  height: 10px
+  width: 10px
+  margin: 0 2px
+  background-color: #bbb
+  border: 3px solid #bbb
+  border-radius: 50%
+  display: inline-block
+  transition: background-color 0.6s ease
+
+.swiper-pagination-bullet-active
+  background-color: #fff
