@@ -53,6 +53,7 @@ export const NavBarInner = styled.div`
 		justify-content: center;
 
 `;
+
 export const NavBarItem = styled(Link)`
 		text-decoration: none;
 		flex: 1;
