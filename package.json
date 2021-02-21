@@ -3,7 +3,7 @@
   "private": true,
   "homepage": "https://arminyahya.github.io/cv",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Armin Yahya",
   "dependencies": {
     "d3-ease": "^1.0.6",
     "gatsby": "^2.19.7",
