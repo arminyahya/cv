@@ -10,3 +10,4 @@ export const wrapPageElement = ({ element, props }) => {
             </Body>
     )
 }
+
