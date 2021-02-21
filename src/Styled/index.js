@@ -41,6 +41,7 @@ export const AvatarInfo = styled.p`
 		font-size: 18px;
 	}
 `;
+
 export const NavBar = styled.div`
 		display: flex;
 		justify-content: center;
